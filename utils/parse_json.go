@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// This function parse json data from http://docs.aluyun.com.
+// This function parse json data from http://docs.aliyun.com.
 func ParseJsonData() string {
 	var module string
 
