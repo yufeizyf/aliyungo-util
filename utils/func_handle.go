@@ -8,12 +8,12 @@ func GetFuncName(line string) string {
 
 	var nameBytes []byte
 
-	pos := 4 //跳过“func”
+	pos := 4 //Skip “func”
 	for buff[pos] == ' ' {
 		pos++
 	}
 
-	if buff[pos] != '(' { // 处理类型  func (a A) funcname(){}
+	if buff[pos] != '(' { //func (a A) funcname(){}
 		for i := pos; buff[i] != '('; i++ {
 			nameBytes = append(nameBytes, buff[i])
 		}
@@ -23,7 +23,7 @@ func GetFuncName(line string) string {
 			i++
 		}
 
-		i = i + 2 // ") " 跳过空格
+		i = i + 2 // ") " Skip space
 
 		for buff[i] != '(' {
 			nameBytes = append(nameBytes, buff[i])
