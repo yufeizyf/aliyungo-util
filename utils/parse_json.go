@@ -3,7 +3,6 @@ package utils
 import (
 	"fmt"
 	"github.com/PuerkitoBio/goquery"
-	"github.com/bitly/go-simplejson"
 	"strings"
 )
 

@@ -1,7 +1,5 @@
 package utils
 
-import ()
-
 // This function gets function names from xxx.go file.
 func GetFuncName(line string) string {
 	buff := []byte(line)
