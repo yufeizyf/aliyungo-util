@@ -109,10 +109,11 @@ func DealEcs(fileList []string, module string) {
 						fwrite.WriteString(line)
 
 					} else {
-
 						fwrite.WriteString(line)
 					}
 
+				} else if line == "//\n" || strings.HasPrefix(line, "// You can read doc at ") {
+					// do nothing
 				} else {
 					fwrite.WriteString(line)
 				}
