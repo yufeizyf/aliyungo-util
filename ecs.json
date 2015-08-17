@@ -1,0 +1,3471 @@
+ "ecs": {
+        "version": "0.2.2", 
+        "list": [
+            {
+                "key": "0010-product-intro", 
+                "name_en": "product-introduction", 
+                "name_cn": "产品简介", 
+                "remark": "描述 ECS 产品的相关概念及产品能力", 
+                "tag": [ ], 
+                "isFolder": [
+                    {
+                        "key": "0010-concept", 
+                        "name_en": "concept", 
+                        "name_cn": "ECS 是什么", 
+                        "tag": [ ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "0010-instance", 
+                        "name_en": "instance", 
+                        "name_cn": "实例", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-summary", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-region", 
+                                "name_en": "region", 
+                                "name_cn": "地域", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-zone", 
+                                "name_en": "zone", 
+                                "name_cn": "可用区", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040-instancetype", 
+                                "name_en": "type", 
+                                "name_cn": "实例规格", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050-instancelifecycle", 
+                                "name_en": "lifecycle", 
+                                "name_cn": "实例生命周期", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0020-storage", 
+                        "name_en": "storage", 
+                        "name_cn": "存储", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-summary", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-diskproperty", 
+                                "name_en": "property", 
+                                "name_cn": "磁盘属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-diskcategory", 
+                                "name_en": "category", 
+                                "name_cn": "磁盘种类", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0030-network", 
+                        "name_en": "network", 
+                        "name_cn": "网络和安全性", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-summary", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-classic", 
+                                "name_en": "classic", 
+                                "name_cn": "经典网络", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-vpc", 
+                                "name_en": "vpc", 
+                                "name_cn": "专有网络", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040-ip", 
+                                "name_en": "ip", 
+                                "name_cn": "网络 IP 地址", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050-eip", 
+                                "name_en": "eip", 
+                                "name_cn": "EIP", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060-securitygroup", 
+                                "name_en": "securitygroup", 
+                                "name_cn": "安全组", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0040-image", 
+                        "name_en": "image", 
+                        "name_cn": "镜像", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-summary", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0050-snapshot", 
+                        "name_en": "snapshot", 
+                        "name_cn": "快照", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-summary", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-concept", 
+                                "name_en": "concept", 
+                                "name_cn": "什么是 ECS 的快照", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-limitation", 
+                                "name_en": "limitation", 
+                                "name_cn": "快照的额度", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0020-sla", 
+                        "name_en": "sla", 
+                        "name_cn": "ECS 等级协议", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": false
+                    }
+                ]
+            }, 
+            {
+                "key": "0020-shopping-guide", 
+                "name_en": "shopping-guide", 
+                "name_cn": "购买指导", 
+                "remark": "描述如何购买 ECS 的说明文档", 
+                "tag": [ ], 
+                "isFolder": [
+                    {
+                        "key": "0010-buy-way", 
+                        "name_en": "buy-way", 
+                        "name_cn": "购买渠道", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-console", 
+                                "name_en": "console", 
+                                "name_cn": "官网购买", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-api", 
+                                "name_en": "api", 
+                                "name_cn": "API 购买", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0020-buy-instance", 
+                        "name_en": "buy-instance", 
+                        "name_cn": "购买实例", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-price", 
+                                "name_en": "price", 
+                                "name_cn": "价格", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-buy", 
+                                "name_en": "buy", 
+                                "name_cn": "新购", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-upgrade", 
+                                "name_en": "upgrade", 
+                                "name_cn": "升级", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040-downgrade", 
+                                "name_en": "downgrade", 
+                                "name_cn": "续费变配", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050-renew", 
+                                "name_en": "renew", 
+                                "name_cn": "续费", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0030-buy-disk", 
+                        "name_en": "buy-disk", 
+                        "name_cn": "购买磁盘", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-price", 
+                                "name_en": "price", 
+                                "name_cn": "价格", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-buy", 
+                                "name_en": "buy", 
+                                "name_cn": "新购", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-resize", 
+                                "name_en": "resize", 
+                                "name_cn": "扩容", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0040-buy-network", 
+                        "name_en": "buy-network", 
+                        "name_cn": "购买网络带宽", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-price", 
+                                "name_en": "price", 
+                                "name_cn": "价格", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-buy", 
+                                "name_en": "buy", 
+                                "name_cn": "新购", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-modify", 
+                                "name_en": "modify", 
+                                "name_cn": "变配", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0050-buy-image", 
+                        "name_en": "buy-image", 
+                        "name_cn": "购买镜像", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-price", 
+                                "name_en": "price", 
+                                "name_cn": "价格", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0060-buy-snapshot", 
+                        "name_en": "buy-snapshot", 
+                        "name_cn": "购买快照", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-price", 
+                                "name_en": "price", 
+                                "name_cn": "价格", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0070-buy-eip", 
+                        "name_en": "buy-eip", 
+                        "name_cn": "购买 EIP", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-price", 
+                                "name_en": "price", 
+                                "name_cn": "价格", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-buy", 
+                                "name_en": "buy", 
+                                "name_cn": "新购", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-modify", 
+                                "name_en": "modify", 
+                                "name_cn": "变配", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0010-restriction", 
+                        "name_en": "restriction", 
+                        "name_cn": "ECS API 产品和业务限制", 
+                        "tag": [ ], 
+                        "isFolder": false
+                    }
+                ]
+            }, 
+            {
+                "key": "0030-operation-guide", 
+                "name_en": "operation-guide", 
+                "name_cn": "操作指南", 
+                "remark": "描述如何管理和操作 ECS 的说明文档", 
+                "tag": [ ], 
+                "isFolder": [
+                    {
+                        "key": "0010-instance-operation", 
+                        "name_en": "instance-operation", 
+                        "name_cn": "实例操作指南", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-describe", 
+                                "name_en": "describe", 
+                                "name_cn": "查看实例", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-start", 
+                                "name_en": "start", 
+                                "name_cn": "启动实例", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-stop", 
+                                "name_en": "stop", 
+                                "name_cn": "停止实例", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040-reboot", 
+                                "name_en": "reboot", 
+                                "name_cn": "重启实例", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050-reset-passwd", 
+                                "name_en": "reset-passwd", 
+                                "name_cn": "重置密码", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060-connect", 
+                                "name_en": "连接实例", 
+                                "name_cn": "购买渠道", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070-monitor", 
+                                "name_en": "monitor", 
+                                "name_cn": "查看监控信息", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080-set-expired-time", 
+                                "name_en": "set-expired-time", 
+                                "name_cn": "设置自动释放时间", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090-unset-expired-time", 
+                                "name_en": "unset-expired-time", 
+                                "name_cn": "取消自动释放时间", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0020-disk-operation", 
+                        "name_en": "disk-operation", 
+                        "name_cn": "磁盘操作指南", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-attach", 
+                                "name_en": "attach", 
+                                "name_cn": "挂载数据盘", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-detach", 
+                                "name_en": "detach", 
+                                "name_cn": "卸载数据盘", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-replace-system-disk", 
+                                "name_en": "replace-system-disk", 
+                                "name_cn": "更换系统盘", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040-reinit", 
+                                "name_en": "reinit", 
+                                "name_cn": "重新初始化磁盘", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0041-reset", 
+                                "name_en": "reset", 
+                                "name_cn": "回滚磁盘", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0042-resize", 
+                                "name_en": "resize", 
+                                "name_cn": "扩容磁盘", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050-monitor", 
+                                "name_en": "monitor", 
+                                "name_cn": "查看监控信息", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0030-image-operation", 
+                        "name_en": "image-operation", 
+                        "name_cn": "镜像操作指南", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-create", 
+                                "name_en": "create", 
+                                "name_cn": "创建自定义镜像", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-copy", 
+                                "name_en": "copy", 
+                                "name_cn": "镜像复制", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-share", 
+                                "name_en": "share", 
+                                "name_cn": "镜像分享", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040-delete", 
+                                "name_en": "delete", 
+                                "name_cn": "删除自定镜像", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050-use", 
+                                "name_en": "use", 
+                                "name_cn": "使用镜像", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060-modify", 
+                                "name_en": "modify", 
+                                "name_cn": "修改自定义镜像信息", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0040-network-operation", 
+                        "name_en": "network-operation", 
+                        "name_cn": "网络与安全性操作指南", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": [ ]
+                    }, 
+                    {
+                        "key": "0050-snapshot-operation", 
+                        "name_en": "snapshot-operation", 
+                        "name_cn": "快照操作指南", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-create", 
+                                "name_en": "create", 
+                                "name_cn": "创建快照", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-copy", 
+                                "name_en": "copy", 
+                                "name_cn": "快照复制", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030-delete", 
+                                "name_en": "delete", 
+                                "name_cn": "删除快照", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040-set-policy", 
+                                "name_en": "set-policy", 
+                                "name_cn": "设置自动快照策略", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050-limitation", 
+                                "name_en": "limitation", 
+                                "name_cn": "查看快照额度", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0060-eip-operation", 
+                        "name_en": "eip-operation", 
+                        "name_cn": "EIP 操作指南", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": [ ]
+                    }, 
+                    {
+                        "key": "0010-ecs-instructions", 
+                        "name_en": "ecs-instructions", 
+                        "name_cn": "ECS 使用须知", 
+                        "tag": [ ], 
+                        "isFolder": false
+                    }
+                ]
+            }, 
+            {
+                "key": "0040-open-api", 
+                "name_en": "open-api", 
+                "name_cn": "API 文档", 
+                "remark": "Open API 接口文档", 
+                "tag": [ ], 
+                "isFolder": [
+                    {
+                        "key": "简介", 
+                        "name_en": "summary", 
+                        "name_cn": "简介", 
+                        "tag": [ ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "API概览", 
+                        "name_en": "apisummary", 
+                        "name_cn": "API 概览", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "API概览tun", 
+                        "name_en": "apisummary", 
+                        "name_cn": "API 概览", 
+                        "tag": [
+                            "tun"
+                        ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "API概览pub", 
+                        "name_en": "apisummary", 
+                        "name_cn": "API 概览", 
+                        "tag": [
+                            "pub"
+                        ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "接口样式模板", 
+                        "name_en": "cf81ac3ff9", 
+                        "name_cn": "接口样式模板", 
+                        "tag": [
+                            "dev"
+                        ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "数据类型样式模板", 
+                        "name_en": "229f45f69c", 
+                        "name_cn": "数据类型样式模板", 
+                        "tag": [
+                            "dev"
+                        ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "更新历史", 
+                        "name_en": "history", 
+                        "name_cn": "更新历史", 
+                        "tag": [ ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "0010调用方式", 
+                        "name_en": "requestmethod", 
+                        "name_cn": "调用方式", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0000概述", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010请求结构", 
+                                "name_en": "requeststructure", 
+                                "name_cn": "请求结构", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020公共参数", 
+                                "name_en": "commonparams", 
+                                "name_cn": "公共参数", 
+                                "tag": [
+                                    "inter", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020公共参数tun", 
+                                "name_en": "commonparams", 
+                                "name_cn": "公共参数", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020公共参数pub", 
+                                "name_en": "commonparams", 
+                                "name_cn": "公共参数", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030返回结果", 
+                                "name_en": "commonresponse", 
+                                "name_cn": "返回结果", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030返回结果pub", 
+                                "name_en": "commonresponse", 
+                                "name_cn": "返回结果", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040签名机制", 
+                                "name_en": "signature", 
+                                "name_cn": "签名机制", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0020借助RAM实现跨账户的ECS资源访问", 
+                        "name_en": "ram", 
+                        "name_cn": "借助 RAM 实现子账号对主账号的 ECS 资源访问", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0000概述", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0000概述pub", 
+                                "name_en": "summary", 
+                                "name_cn": "概述", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020RAM中可授权的ECS资源类型", 
+                                "name_en": "ecstype", 
+                                "name_cn": "RAM 中可授权的 ECS 资源类型", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030RAM中可对ECS资源进行授权的Action", 
+                                "name_en": "ecsaction", 
+                                "name_cn": "RAM 中可对 ECS 资源进行授权的 Action", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030RAM中可对ECS资源进行授权的Actionpub", 
+                                "name_en": "ecsaction", 
+                                "name_cn": "RAM 中可对 ECS 资源进行授权的 Action", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030RAM中可对ECS资源进行授权的Actiontun", 
+                                "name_en": "ecsaction", 
+                                "name_cn": "RAM 中可对 ECS 资源进行授权的 Action", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030RAM中可对ECS资源进行授权的Actiondev", 
+                                "name_en": "ecsaction", 
+                                "name_cn": "RAM 中可对 ECS 资源进行授权的 Action", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040ECSAPI发生跨账户访问时的鉴权规则", 
+                                "name_en": "ecsrule", 
+                                "name_cn": "ECS API 发生跨账户访问时的鉴权规则", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040ECSAPI发生跨账户访问时的鉴权规则pub", 
+                                "name_en": "ecsrule", 
+                                "name_cn": "ECS API 发生子账号访问主账号资源时的鉴权规则", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0030实例相关接口", 
+                        "name_en": "instance", 
+                        "name_cn": "实例相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010创建实例", 
+                                "name_en": "createinstance", 
+                                "name_cn": "创建实例", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010创建实例pub", 
+                                "name_en": "createinstance", 
+                                "name_cn": "创建实例", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010创建实例tun", 
+                                "name_en": "createinstance", 
+                                "name_cn": "创建实例", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010创建实例dev", 
+                                "name_en": "createinstance", 
+                                "name_cn": "创建实例", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020启动实例", 
+                                "name_en": "startinstance", 
+                                "name_cn": "启动实例", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020启动实例pub", 
+                                "name_en": "startinstance", 
+                                "name_cn": "启动实例", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030停止实例", 
+                                "name_en": "stopinstance", 
+                                "name_cn": "停止实例", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030停止实例pub", 
+                                "name_en": "stopinstance", 
+                                "name_cn": "停止实例", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040重启实例", 
+                                "name_en": "rebootinstance", 
+                                "name_cn": "重启实例", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040重启实例pub", 
+                                "name_en": "rebootinstance", 
+                                "name_cn": "重启实例", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050修改实例规格", 
+                                "name_en": "modifyinstancespec", 
+                                "name_cn": "修改实例规格", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050修改实例规格tun", 
+                                "name_en": "modifyinstancespec", 
+                                "name_cn": "修改实例规格", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050修改实例规格dev", 
+                                "name_en": "modifyinstancespec", 
+                                "name_cn": "修改实例规格", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060修改实例属性", 
+                                "name_en": "modifyinstanceattribute", 
+                                "name_cn": "修改实例属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060修改实例属性pub", 
+                                "name_en": "modifyinstanceattribute", 
+                                "name_cn": "修改实例属性", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改实例VPC属性", 
+                                "name_en": "modifyinstancevpcAttribute", 
+                                "name_cn": "修改实例 VPC 属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改实例VPC属性tun", 
+                                "name_en": "modifyinstancevpcAttribute", 
+                                "name_cn": "修改实例 VPC 属性", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改实例VPC属性dev", 
+                                "name_en": "modifyinstancevpcAttribute", 
+                                "name_cn": "修改实例 VPC 属性", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改实例VPC属性pub", 
+                                "name_en": "modifyinstancevpcAttribute", 
+                                "name_cn": "修改实例 VPC 属性", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080查询实例状态", 
+                                "name_en": "describeinstancestatus", 
+                                "name_cn": "查询实例状态", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080查询实例状态tun", 
+                                "name_en": "describeinstancestatus", 
+                                "name_cn": "查询实例状态", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080查询实例状态pub", 
+                                "name_en": "describeinstancestatus", 
+                                "name_cn": "查询实例状态", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080查询实例状态dev", 
+                                "name_en": "describeinstancestatus", 
+                                "name_cn": "查询实例状态", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090查询实例信息", 
+                                "name_en": "describeinstanceattribute", 
+                                "name_cn": "查询实例信息", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100查询实例列表", 
+                                "name_en": "describeinstances", 
+                                "name_cn": "查询实例列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100查询实例列表tun", 
+                                "name_en": "describeinstances", 
+                                "name_cn": "查询实例列表", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100查询实例列表dev", 
+                                "name_en": "describeinstances", 
+                                "name_cn": "查询实例列表", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100查询实例列表pub", 
+                                "name_en": "describeinstances", 
+                                "name_cn": "查询实例列表", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110删除实例", 
+                                "name_en": "deleteinstance", 
+                                "name_cn": "删除实例", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110删除实例pub", 
+                                "name_en": "deleteinstance", 
+                                "name_cn": "删除实例", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110删除实例tun", 
+                                "name_en": "deleteinstance", 
+                                "name_cn": "删除实例", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110删除实例dev", 
+                                "name_en": "deleteinstance", 
+                                "name_cn": "删除实例", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0120将实例加入安全组", 
+                                "name_en": "joinsecuritygroup", 
+                                "name_cn": "将实例加入安全组", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0120将实例加入安全组pub", 
+                                "name_en": "joinsecuritygroup", 
+                                "name_cn": "将实例加入安全组", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0130将实例移出安全组", 
+                                "name_en": "leavesecuritygroup", 
+                                "name_cn": "将实例移出安全组", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0130将实例移出安全组pub", 
+                                "name_en": "leavesecuritygroup", 
+                                "name_cn": "将实例移出安全组", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0140查询实例节点信息", 
+                                "name_en": "describeinstancephysicalattribute", 
+                                "name_cn": "查询实例节点信息", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0140查询实例节点信息dev", 
+                                "name_en": "describeinstancephysicalattribute", 
+                                "name_cn": "查询实例节点信息", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0150查询可用IP段", 
+                                "name_en": "describeipranges", 
+                                "name_cn": "查询可用 IP 段", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0150查询可用IP段dev", 
+                                "name_en": "describeipranges", 
+                                "name_cn": "查询可用 IP 段", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0160为实例绑定IP段", 
+                                "name_en": "bindiprange", 
+                                "name_cn": "为实例绑定 IP 段", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0160为实例绑定IP段dev", 
+                                "name_en": "bindiprange", 
+                                "name_cn": "为实例绑定 IP 段", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0170解除绑定IP段", 
+                                "name_en": "unbindiprange", 
+                                "name_cn": "解除绑定 IP 段", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0170解除绑定IP段dev", 
+                                "name_en": "unbindiprange", 
+                                "name_cn": "解除绑定 IP 段", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0180查询内网属性", 
+                                "name_en": "describeintranetattributekb", 
+                                "name_cn": "查询内网属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0180查询内网属性tun", 
+                                "name_en": "describeintranetattributekb", 
+                                "name_cn": "查询内网属性", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0190修改内网带宽", 
+                                "name_en": "modifyintranetbandwidthkb", 
+                                "name_cn": "修改内网带宽", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0190修改内网带宽tun", 
+                                "name_en": "modifyintranetbandwidthkb", 
+                                "name_cn": "修改内网带宽", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0200查询实例管理终端地址", 
+                                "name_en": "describeinstancevncurl", 
+                                "name_cn": "查询实例管理终端地址", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0200查询实例管理终端地址dev", 
+                                "name_en": "describeinstancevncurl", 
+                                "name_cn": "查询实例管理终端地址", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0200查询实例管理终端地址tun", 
+                                "name_en": "describeinstancevncurl", 
+                                "name_cn": "查询实例管理终端地址", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0200查询实例管理终端地址pub", 
+                                "name_en": "describeinstancevncurl", 
+                                "name_cn": "查询实例管理终端地址", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0220修改实例管理终端口令", 
+                                "name_en": "modifyinstancevncpasswd", 
+                                "name_cn": "修改实例管理终端口令", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0220修改实例管理终端口令dev", 
+                                "name_en": "modifyinstancevncpasswd", 
+                                "name_cn": "修改实例管理终端口令", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0220修改实例管理终端口令tun", 
+                                "name_en": "modifyinstancevncpasswd", 
+                                "name_cn": "修改实例管理终端口令", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0220修改实例管理终端口令pub", 
+                                "name_en": "modifyinstancevncpasswd", 
+                                "name_cn": "修改实例管理终端口令", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0040磁盘相关接口", 
+                        "name_en": "disk", 
+                        "name_cn": "磁盘相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010创建磁盘", 
+                                "name_en": "createdisk", 
+                                "name_cn": "创建磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010创建磁盘pub", 
+                                "name_en": "createdisk", 
+                                "name_cn": "创建磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020查询磁盘", 
+                                "name_en": "describedisks", 
+                                "name_cn": "查询磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020查询磁盘pub", 
+                                "name_en": "describedisks", 
+                                "name_cn": "查询磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030挂载磁盘", 
+                                "name_en": "attachdisk", 
+                                "name_cn": "挂载磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030挂载磁盘pub", 
+                                "name_en": "attachdisk", 
+                                "name_cn": "挂载磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040卸载磁盘", 
+                                "name_en": "detachdisk", 
+                                "name_cn": "卸载磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040卸载磁盘pub", 
+                                "name_en": "detachdisk", 
+                                "name_cn": "卸载磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050修改磁盘属性", 
+                                "name_en": "modifydiskattribute", 
+                                "name_cn": "修改磁盘属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050修改磁盘属性pub", 
+                                "name_en": "modifydiskattribute", 
+                                "name_cn": "修改磁盘属性", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060删除磁盘", 
+                                "name_en": "deletedisk", 
+                                "name_cn": "删除磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060删除磁盘pub", 
+                                "name_en": "deletedisk", 
+                                "name_cn": "删除磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070重新初始化磁盘", 
+                                "name_en": "reinitdisk", 
+                                "name_cn": "重新初始化磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070重新初始化磁盘pub", 
+                                "name_en": "reinitdisk", 
+                                "name_cn": "重新初始化磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080回滚磁盘", 
+                                "name_en": "resetdisk", 
+                                "name_cn": "回滚磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080回滚磁盘pub", 
+                                "name_en": "resetdisk", 
+                                "name_cn": "回滚磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090更换系统盘", 
+                                "name_en": "replacesystemdisk", 
+                                "name_cn": "更换系统盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090更换系统盘pub", 
+                                "name_en": "replacesystemdisk", 
+                                "name_cn": "更换系统盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100扩容磁盘", 
+                                "name_en": "resizedisk", 
+                                "name_cn": "扩容磁盘", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100扩容磁盘pub", 
+                                "name_en": "resizedisk", 
+                                "name_cn": "扩容磁盘", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110检测磁盘能否执行快照策略", 
+                                "name_en": "checkdiskenableatuosnapshotvalidation", 
+                                "name_cn": "检测磁盘能否执行快照策略", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0050快照相关接口", 
+                        "name_en": "snapshot", 
+                        "name_cn": "快照相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010创建快照", 
+                                "name_en": "createsnapshot", 
+                                "name_cn": "创建快照", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010创建快照pub", 
+                                "name_en": "createsnapshot", 
+                                "name_cn": "创建快照", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除快照", 
+                                "name_en": "deletesnapshot", 
+                                "name_cn": "删除快照", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除快照pub", 
+                                "name_en": "deletesnapshot", 
+                                "name_cn": "删除快照", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询快照列表", 
+                                "name_en": "describesnapshots", 
+                                "name_cn": "查询快照", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询快照列表pub", 
+                                "name_en": "describesnapshots", 
+                                "name_cn": "查询快照", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040设置自动快照策略", 
+                                "name_en": "modifyautosnapshotpolicy", 
+                                "name_cn": "设置自动快照策略", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040设置自动快照策略pub", 
+                                "name_en": "modifyautosnapshotpolicy", 
+                                "name_cn": "设置自动快照策略", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050查询自动快照策略", 
+                                "name_en": "describeautosnapshotpolicy", 
+                                "name_cn": "查询自动快照策略", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050查询自动快照策略pub", 
+                                "name_en": "describeautosnapshotpolicy", 
+                                "name_cn": "查询自动快照策略", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0060镜像相关接口", 
+                        "name_en": "image", 
+                        "name_cn": "镜像相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010查询可用镜像", 
+                                "name_en": "describeimages", 
+                                "name_cn": "查询可用镜像", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010查询可用镜像pub", 
+                                "name_en": "describeimages", 
+                                "name_cn": "查询可用镜像", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020创建自定义镜像", 
+                                "name_en": "createimage", 
+                                "name_cn": "创建自定义镜像", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020创建自定义镜像pub", 
+                                "name_en": "createimage", 
+                                "name_cn": "创建自定义镜像", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0021修改镜像属性", 
+                                "name_en": "modifyimageattribute", 
+                                "name_cn": "修改镜像属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0021修改镜像属性pub", 
+                                "name_en": "modifyimageattribute", 
+                                "name_cn": "修改镜像属性", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030删除自定义镜像", 
+                                "name_en": "deleteimage", 
+                                "name_cn": "删除自定义镜像", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030删除自定义镜像pub", 
+                                "name_en": "deleteimage", 
+                                "name_cn": "删除自定义镜像", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040复制镜像", 
+                                "name_en": "copyimage", 
+                                "name_cn": "复制镜像", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040复制镜像pub", 
+                                "name_en": "copyimage", 
+                                "name_cn": "复制镜像", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050取消复制镜像", 
+                                "name_en": "cancelcopyimage", 
+                                "name_cn": "取消复制镜像", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050取消复制镜像pub", 
+                                "name_en": "cancelcopyimage", 
+                                "name_cn": "取消复制镜像", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060管理镜像共享", 
+                                "name_en": "modifyimagesharepermission", 
+                                "name_cn": "管理镜像共享", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060管理镜像共享pub", 
+                                "name_en": "modifyimagesharepermission", 
+                                "name_cn": "管理镜像共享", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070管理镜像群组共享", 
+                                "name_en": "modifyimagesharegrouppermission", 
+                                "name_cn": "管理镜像群组共享", 
+                                "tag": [
+                                    "inter", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080查询镜像共享", 
+                                "name_en": "describeimagesharepermission", 
+                                "name_cn": "取消复制镜像", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080查询镜像共享pub", 
+                                "name_en": "describeimagesharepermission", 
+                                "name_cn": "查询镜像共享", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0070网络相关接口", 
+                        "name_en": "network", 
+                        "name_cn": "网络相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010分配公网IP地址", 
+                                "name_en": "allocatepublicipaddress", 
+                                "name_cn": "分配公网 IP 地址", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010分配公网IP地址tun", 
+                                "name_en": "allocatepublicipaddress", 
+                                "name_cn": "分配公网 IP 地址", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010分配公网IP地址pub", 
+                                "name_en": "allocatepublicipaddress", 
+                                "name_cn": "分配公网 IP 地址", 
+                                "tag": [
+                                    "pub", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020释放公网IP地址", 
+                                "name_en": "releasepublicipaddress", 
+                                "name_cn": "释放公网 IP 地址", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020释放公网IP地址tun", 
+                                "name_en": "releasepublicipaddress", 
+                                "name_cn": "释放公网 IP 地址", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020释放公网IP地址dev", 
+                                "name_en": "releasepublicipaddress", 
+                                "name_cn": "释放公网 IP 地址", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030修改实例网络规格", 
+                                "name_en": "modifyinstancenetworkspec", 
+                                "name_cn": "修改实例网络规格", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030修改实例网络规格pub", 
+                                "name_en": "modifyinstancenetworkspec", 
+                                "name_cn": "修改实例网络规格", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040申请弹性公网IP", 
+                                "name_en": "allocateeipaddress", 
+                                "name_cn": "申请弹性公网 IP", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040申请弹性公网IPpub", 
+                                "name_en": "allocateeipaddress", 
+                                "name_cn": "申请弹性公网 IP", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050绑定弹性公网IP", 
+                                "name_en": "associateeipaddress", 
+                                "name_cn": "绑定弹性公网 IP", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050绑定弹性公网IPpub", 
+                                "name_en": "associateeipaddress", 
+                                "name_cn": "绑定弹性公网 IP", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060查询弹性公网IP列表", 
+                                "name_en": "describeeipaddresses", 
+                                "name_cn": "查询弹性公网 IP 列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060查询弹性公网IP列表pub", 
+                                "name_en": "describeeipaddresses", 
+                                "name_cn": "查询弹性公网 IP 列表", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改弹性公网IP属性", 
+                                "name_en": "modifyeipaddressattribute", 
+                                "name_cn": "修改弹性公网 IP 属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改弹性公网IP属性pub", 
+                                "name_en": "modifyeipaddressattribute", 
+                                "name_cn": "修改弹性公网 IP 属性", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080解绑弹性公网IP", 
+                                "name_en": "unassociateeipaddress", 
+                                "name_cn": "解绑弹性公网 IP", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080解绑弹性公网IPpub", 
+                                "name_en": "unassociateeipaddress", 
+                                "name_cn": "解绑弹性公网 IP", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090释放弹性公网IP", 
+                                "name_en": "releaseeipaddress", 
+                                "name_cn": "释放弹性公网 IP", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090释放弹性公网IPpub", 
+                                "name_en": "releaseeipaddress", 
+                                "name_cn": "释放弹性公网 IP", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0080安全组相关接口", 
+                        "name_en": "securitygroup", 
+                        "name_cn": "安全组相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010创建安全组", 
+                                "name_en": "createsecuritygroup", 
+                                "name_cn": "创建安全组", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010创建安全组dev", 
+                                "name_en": "createsecuritygroup", 
+                                "name_cn": "创建安全组", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010创建安全组pub", 
+                                "name_en": "createsecuritygroup", 
+                                "name_cn": "创建安全组", 
+                                "tag": [
+                                    "pub", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020授权安全组权限", 
+                                "name_en": "authorizesecuritygroup", 
+                                "name_cn": "授权安全组权限", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100授权入方向安全组权限dev", 
+                                "name_en": "authorizesecuritygroupingress", 
+                                "name_cn": "授权入方向安全组权限", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020授权安全组权限pub", 
+                                "name_en": "authorizesecuritygroup", 
+                                "name_cn": "授权安全组权限", 
+                                "tag": [
+                                    "pub", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询安全组规则", 
+                                "name_en": "describesecuritygroupattribute", 
+                                "name_cn": "查询安全组规则", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询安全组规则dev", 
+                                "name_en": "describesecuritygroupattribute", 
+                                "name_cn": "查询安全组规则", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询安全组规则pub", 
+                                "name_en": "describesecuritygroupattribute", 
+                                "name_cn": "查询安全组规则", 
+                                "tag": [
+                                    "pub", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040查询安全组列表", 
+                                "name_en": "describesecuritygroups", 
+                                "name_cn": "查询安全组列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040查询安全组列表pub", 
+                                "name_en": "describesecuritygroups", 
+                                "name_cn": "查询安全组列表", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050撤销安全组规则", 
+                                "name_en": "revokesecuritygroup", 
+                                "name_cn": "撤销安全组规则", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050撤销安全组规则pub", 
+                                "name_en": "revokesecuritygroup", 
+                                "name_cn": "撤销安全组规则", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060删除安全组", 
+                                "name_en": "deletesecuritygroup", 
+                                "name_cn": "删除安全组", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060删除安全组pub", 
+                                "name_en": "deletesecuritygroup", 
+                                "name_cn": "删除安全组", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改安全组属性", 
+                                "name_en": "modifysecuritygroupattribute", 
+                                "name_cn": "修改安全组属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070修改安全组属性pub", 
+                                "name_en": "modifysecuritygroupattribute", 
+                                "name_cn": "修改安全组属性", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080授权出方向安全组权限", 
+                                "name_en": "authorizesecuritygroupegress", 
+                                "name_cn": "授权出方向安全组权限", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080授权出方向安全组权限pub", 
+                                "name_en": "authorizesecuritygroupegress", 
+                                "name_cn": "授权出方向安全组权限", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090撤销出方向安全组规则", 
+                                "name_en": "revokesecuritygroupegress", 
+                                "name_cn": "撤销出方向安全组规则", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090撤销出方向安全组规则pub", 
+                                "name_en": "revokesecuritygroupegress", 
+                                "name_cn": "撤销出方向安全组规则", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0090专有网络相关接口", 
+                        "name_en": "vpc", 
+                        "name_cn": "专有网络相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010新建专有网络", 
+                                "name_en": "createvpc", 
+                                "name_cn": "新建专有网络", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010新建专有网络pub", 
+                                "name_en": "createvpc", 
+                                "name_cn": "新建专有网络", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除专有网络", 
+                                "name_en": "deletevpc", 
+                                "name_cn": "删除专有网络", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除专有网络pub", 
+                                "name_en": "deletevpc", 
+                                "name_cn": "删除专有网络", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询专有网络列表", 
+                                "name_en": "describevpcs", 
+                                "name_cn": "查询专有网络列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询专有网络列表pub", 
+                                "name_en": "describevpcs", 
+                                "name_cn": "查询专有网络列表", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040修改专有网络属性", 
+                                "name_en": "modifyvpcattribute", 
+                                "name_cn": "修改专有网络属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040修改专有网络属性pub", 
+                                "name_en": "modifyvpcattribute", 
+                                "name_cn": "修改专有网络属性", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0100路由器相关接口", 
+                        "name_en": "vrouter", 
+                        "name_cn": "路由器相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010查询路由器列表", 
+                                "name_en": "describevrouters", 
+                                "name_cn": "查询路由器列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010查询路由器列表pub", 
+                                "name_en": "describevrouters", 
+                                "name_cn": "查询路由器列表", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020修改路由器属性", 
+                                "name_en": "modifyvrouterattribute", 
+                                "name_cn": "修改路由器属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020修改路由器属性pub", 
+                                "name_en": "modifyvrouterattribute", 
+                                "name_cn": "修改路由器属性", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0110交换机相关接口", 
+                        "name_en": "vswitch", 
+                        "name_cn": "交换机相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010新建交换机", 
+                                "name_en": "createvswitch", 
+                                "name_cn": "新建交换机", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010新建交换机pub", 
+                                "name_en": "createvswitch", 
+                                "name_cn": "新建交换机", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除交换机", 
+                                "name_en": "deletevswitch", 
+                                "name_cn": "删除交换机", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除交换机pub", 
+                                "name_en": "deletevswitch", 
+                                "name_cn": "删除交换机", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询交换机列表", 
+                                "name_en": "describevswitches", 
+                                "name_cn": "查询交换机列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询交换机列表pub", 
+                                "name_en": "describevswitches", 
+                                "name_cn": "查询交换机列表", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040修改交换机属性", 
+                                "name_en": "modifyvswitchattribute", 
+                                "name_cn": "修改交换机属性", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040修改交换机属性pub", 
+                                "name_en": "modifyvswitchattribute", 
+                                "name_cn": "修改交换机属性", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0120路由表相关接口", 
+                        "name_en": "routertable", 
+                        "name_cn": "路由表相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010新建自定义路由", 
+                                "name_en": "createrouteentry", 
+                                "name_cn": "新建自定义路由", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010新建自定义路由pub", 
+                                "name_en": "createrouteentry", 
+                                "name_cn": "新建自定义路由", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除自定义路由", 
+                                "name_en": "deleterouteentry", 
+                                "name_cn": "删除自定义路由", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020删除自定义路由pub", 
+                                "name_en": "deleterouteentry", 
+                                "name_cn": "删除自定义路由", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询路由表列表", 
+                                "name_en": "describeroutetables", 
+                                "name_cn": "查询路由表列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询路由表列表pub", 
+                                "name_en": "describeroutetables", 
+                                "name_cn": "查询路由表列表", 
+                                "tag": [
+                                    "pub", 
+                                    "dev", 
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0130地域相关接口", 
+                        "name_en": "region", 
+                        "name_cn": "地域相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010查询可用地域列表", 
+                                "name_en": "describeregions", 
+                                "name_cn": "查询可用地域列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010查询可用地域列表pub", 
+                                "name_en": "describeregions", 
+                                "name_cn": "查询可用地域列表", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020查询可用区", 
+                                "name_en": "describezones", 
+                                "name_cn": "查询可用区", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020查询可用区pub", 
+                                "name_en": "describezones", 
+                                "name_cn": "查询可用区", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询可用Cluster列表", 
+                                "name_en": "describeclusters", 
+                                "name_cn": "查询可用Cluster列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询可用Cluster列表dev", 
+                                "name_en": "describeclusters", 
+                                "name_cn": "查询可用Cluster列表", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0140监控相关接口", 
+                        "name_en": "monitor", 
+                        "name_cn": "监控相关接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010查看云服务器监控信息", 
+                                "name_en": "getmonitordata", 
+                                "name_cn": "查看云服务器监控信息", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020查看云服务器实例的监控信息", 
+                                "name_en": "describeinstancemonitordata", 
+                                "name_cn": "查看云服务器实例的监控信息", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020查看云服务器实例的监控信息pub", 
+                                "name_en": "describeinstancemonitordata", 
+                                "name_cn": "查看云服务器实例的监控信息", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查看弹性公网IP监控信息", 
+                                "name_en": "describeeipmonitordata", 
+                                "name_cn": "查看弹性公网IP监控信息", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查看弹性公网IP监控信息pub", 
+                                "name_en": "describeeipmonitordata", 
+                                "name_cn": "查看弹性公网IP监控信息", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040查看磁盘的监控信息", 
+                                "name_en": "describediskmonitordata", 
+                                "name_cn": "查看磁盘的监控信息", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040查看磁盘的监控信息pub", 
+                                "name_en": "describediskmonitordata", 
+                                "name_cn": "查看磁盘的监控信息", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0141标签相关接口", 
+                        "name_en": "tags", 
+                        "name_cn": "标签相关接口", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": [
+                            {
+                                "key": "0010添加标签", 
+                                "name_en": "addtags", 
+                                "name_cn": "添加标签", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020移除标签", 
+                                "name_en": "removetags", 
+                                "name_cn": "移除标签", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030查询标签", 
+                                "name_en": "describetags", 
+                                "name_cn": "查询标签", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040根据标签查询资源", 
+                                "name_en": "describeresourcebytags", 
+                                "name_cn": "根据标签查询资源", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050查询标签键", 
+                                "name_en": "describetagkeys", 
+                                "name_cn": "查询标签键", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0150其他接口", 
+                        "name_en": "other", 
+                        "name_cn": "其他接口", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010查询实例资源规格列表", 
+                                "name_en": "describeinstancetypes", 
+                                "name_cn": "查询实例资源规格列表", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010查询实例资源规格列表pub", 
+                                "name_en": "describeinstancetypes", 
+                                "name_cn": "查询实例资源规格列表", 
+                                "tag": [
+                                    "pub", 
+                                    "tun", 
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020查询业务资源限制", 
+                                "name_en": "describelimitation", 
+                                "name_cn": "查询业务资源限制", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0160数据类型", 
+                        "name_en": "datatype", 
+                        "name_cn": "数据类型", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010DiskItemType", 
+                                "name_en": "diskitemtype", 
+                                "name_cn": "DiskItemType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020DiskSetType", 
+                                "name_en": "disksettype", 
+                                "name_cn": "DiskSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030ImageType", 
+                                "name_en": "imagetype", 
+                                "name_cn": "ImageType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040InstanceMonitorDataType", 
+                                "name_en": "instancemonitordatatype", 
+                                "name_cn": "InstanceMonitorDataType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050InstanceStatusItemType", 
+                                "name_en": "instancestatusitemtype", 
+                                "name_cn": "InstanceStatusItemType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060InstanceStatusSetType", 
+                                "name_en": "instancestatussettype", 
+                                "name_cn": "InstanceStatusSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070OperationLocksType", 
+                                "name_en": "operationlockstype", 
+                                "name_cn": "OperationLocksType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080InstanceTypeItemType", 
+                                "name_en": "instancetypeitemtype", 
+                                "name_cn": "InstanceTypeItemType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090IpAddressSetType", 
+                                "name_en": "ipaddresssettype", 
+                                "name_cn": "IpAddressSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100PermissionSetType", 
+                                "name_en": "permissionsettype", 
+                                "name_cn": "PermissionSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110PermissionType", 
+                                "name_en": "permissiontype", 
+                                "name_cn": "PermissionType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0120RegionType", 
+                                "name_en": "regiontype", 
+                                "name_cn": "RegionType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0130AvailableResourceCreationType", 
+                                "name_en": "availableresourcecreationtype", 
+                                "name_cn": "AvailableResourceCreationType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0140AvailableDiskCategoriesType", 
+                                "name_en": "availablediskcategoriestype", 
+                                "name_cn": "AvailableDiskCategoriesType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0150ZoneType", 
+                                "name_en": "zonetype", 
+                                "name_cn": "ZoneType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0160ClusterType", 
+                                "name_en": "clustertype", 
+                                "name_cn": "ClusterType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0170SnapshotType", 
+                                "name_en": "snapshottype", 
+                                "name_cn": "SnapshotType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0180SecurityGroupIdSetType", 
+                                "name_en": "securitygroupidsettype", 
+                                "name_cn": "SecurityGroupIdSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0190SecurityGroupSetType", 
+                                "name_en": "securitygroupsettype", 
+                                "name_cn": "SecurityGroupSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0200SecurityGroupItemType", 
+                                "name_en": "securitygroupitemtype", 
+                                "name_cn": "SecurityGroupItemType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0210IpRangeSetType", 
+                                "name_en": "iprangesettype", 
+                                "name_cn": "IpRangeSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0220AutoSnapshotPolicyType", 
+                                "name_en": "autosnapshotpolicytype", 
+                                "name_cn": "AutoSnapshotPolicyType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0230AutoSnapshotExecutionStatusType", 
+                                "name_en": "autosnapshotexecutionstatustype", 
+                                "name_cn": "AutoSnapshotExecutionStatusType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0240DiskDeviceMapping", 
+                                "name_en": "diskdevicemapping", 
+                                "name_cn": "DiskDeviceMapping", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0250VpcSetType", 
+                                "name_en": "vpcsettype", 
+                                "name_cn": "VpcSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0260VRouterSetType", 
+                                "name_en": "vroutersettype", 
+                                "name_cn": "VRouterSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0270RouteTableSetType", 
+                                "name_en": "routetablesettype", 
+                                "name_cn": "RouteTableSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0280RouteEntrySetType", 
+                                "name_en": "routeentrysettype", 
+                                "name_cn": "RouteEntrySetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0290VSwitchSetType", 
+                                "name_en": "vswitchsettype", 
+                                "name_cn": "VSwitchSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0300EipAddressAssociateType", 
+                                "name_en": "eipaddressassociatetype", 
+                                "name_cn": "EipAddressAssociateType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0310EipAddressSetType", 
+                                "name_en": "eipaddresssettype", 
+                                "name_cn": "EipAddressSetType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0320InstanceAttributesType", 
+                                "name_en": "instanceattributestype", 
+                                "name_cn": "InstanceAttributesType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0330VpcAttributesType", 
+                                "name_en": "vpcattributestype", 
+                                "name_cn": "VpcAttributesType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0340EipMonitorDataType", 
+                                "name_en": "eipmonitordatatype", 
+                                "name_cn": "EipMonitorDataType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0350DiskMonitorDataType", 
+                                "name_en": "diskmonitordatatype", 
+                                "name_cn": "DiskMonitorDataType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0360AccountType", 
+                                "name_en": "accountType", 
+                                "name_cn": "AccountType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0370ShareGroupType", 
+                                "name_en": "shareGroupType", 
+                                "name_cn": "ShareGroupType", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0380TagSetItem", 
+                                "name_en": "tagsetitem", 
+                                "name_cn": "TagSetItem", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0390ResSetItem", 
+                                "name_en": "ressetitem", 
+                                "name_cn": "ResSetItem", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0170附录", 
+                        "name_en": "appendix", 
+                        "name_cn": "附录", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010实例资源规格对照表", 
+                                "name_en": "instancetype", 
+                                "name_cn": "实例资源规格对照表", 
+                                "tag": [
+                                    "tun", 
+                                    "dev", 
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0010实例资源规格对照表pub", 
+                                "name_en": "instancetype", 
+                                "name_cn": "实例资源规格对照表", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020错误代码表", 
+                                "name_en": "errcode", 
+                                "name_cn": "错误代码表", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0030实例状态表", 
+                                "name_en": "instancestatustable", 
+                                "name_cn": "实例状态表", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0040实例状态图", 
+                                "name_en": "instancestatusimg", 
+                                "name_cn": "实例状态图", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0050独立云磁盘状态表", 
+                                "name_en": "diskstatustable", 
+                                "name_cn": "普通云盘状态表", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0060独立云磁盘状态图", 
+                                "name_en": "diskstatusimg", 
+                                "name_cn": "普通云盘状态图", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0070磁盘种类表", 
+                                "name_en": "disktype", 
+                                "name_cn": "磁盘种类表", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0080如何调用接口", 
+                                "name_en": "useinterface", 
+                                "name_cn": "如何调用接口", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0090如何保证幂等性", 
+                                "name_en": "idempotency", 
+                                "name_cn": "如何保证幂等性", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100欠费状态下的API行为", 
+                                "name_en": "arrearage", 
+                                "name_cn": "欠费状态下的API行为", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100欠费状态下的API行为dev", 
+                                "name_en": "arrearage", 
+                                "name_cn": "欠费状态下的API行为", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100欠费状态下的API行为tun", 
+                                "name_en": "arrearage", 
+                                "name_cn": "欠费状态下的API行为", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0100欠费状态下的API行为pub", 
+                                "name_en": "arrearage", 
+                                "name_cn": "欠费状态下的API行为", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110实例被安全锁定时API的行为", 
+                                "name_en": "safe", 
+                                "name_cn": "实例被安全锁定时API的行为", 
+                                "tag": [
+                                    "inter"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110实例被安全锁定时API的行为dev", 
+                                "name_en": "safe", 
+                                "name_cn": "实例被安全锁定时API的行为", 
+                                "tag": [
+                                    "dev"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110实例被安全锁定时API的行为tun", 
+                                "name_en": "safe", 
+                                "name_cn": "实例被安全锁定时API的行为", 
+                                "tag": [
+                                    "tun"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0110实例被安全锁定时API的行为pub", 
+                                "name_en": "safe", 
+                                "name_cn": "实例被安全锁定时API的行为", 
+                                "tag": [
+                                    "pub"
+                                ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0120时间格式", 
+                                "name_en": "DateTimeFormat", 
+                                "name_cn": "时间格式", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "key": "0050-sdk", 
+                "name_en": "sdk", 
+                "name_cn": "SDK 手册", 
+                "remark": "开发工具包", 
+                "tag": [ ], 
+                "isFolder": [
+                    {
+                        "key": "0010-create_ak", 
+                        "name_en": "create_ak", 
+                        "name_cn": "创建Access Key", 
+                        "tag": [ ], 
+                        "isFolder": false
+                    }, 
+                    {
+                        "key": "0010-java", 
+                        "name_en": "java", 
+                        "name_cn": "Java SDK", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-install", 
+                                "name_en": "install", 
+                                "name_cn": "环境准备", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-intro", 
+                                "name_en": "intro", 
+                                "name_cn": "快速入门", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0020-c_sharp", 
+                        "name_en": "c_sharp", 
+                        "name_cn": "C# SDK", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-install", 
+                                "name_en": "install", 
+                                "name_cn": "环境准备", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-intro", 
+                                "name_en": "intro", 
+                                "name_cn": "快速入门", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0030-php", 
+                        "name_en": "php", 
+                        "name_cn": "PHP SDK", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-install", 
+                                "name_en": "install", 
+                                "name_cn": "环境准备", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-intro", 
+                                "name_en": "intro", 
+                                "name_cn": "快速入门", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }, 
+                    {
+                        "key": "0040-python", 
+                        "name_en": "python", 
+                        "name_cn": "Python SDK", 
+                        "tag": [ ], 
+                        "isFolder": [
+                            {
+                                "key": "0010-install", 
+                                "name_en": "install", 
+                                "name_cn": "环境准备", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }, 
+                            {
+                                "key": "0020-intro", 
+                                "name_en": "intro", 
+                                "name_cn": "快速入门", 
+                                "tag": [ ], 
+                                "isFolder": false
+                            }
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "key": "0060-best-practice", 
+                "name_en": "best-practice", 
+                "name_cn": "最佳实践", 
+                "remark": "使用 ECS 的最佳实践", 
+                "tag": [
+                    "inter"
+                ], 
+                "isFolder": [
+                    {
+                        "key": "0010-performance-benchmark", 
+                        "name_en": "performance-benchmark", 
+                        "name_cn": "ECS 性能 Benchmark", 
+                        "tag": [
+                            "inter"
+                        ], 
+                        "isFolder": false
+                    }
+                ]
+            }
+        ]
+    }
