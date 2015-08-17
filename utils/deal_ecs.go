@@ -37,19 +37,24 @@ func GetEcsDocs(module string) string {
 		if ECSAPI[name] == true {
 			docsFolder := docs["isFolder"].([]interface{})
 			docsList := Funclist{}
-
-			for _, d := range docsFolder {
-				element := d.(map[string]interface{})
-				key := element["key"].(string) //只找pub的
-				if strings.HasSuffix(key, "pub") {
-					funcname := element["name_en"].(string)
-					docsList[funcname] = true
-
-					if name != "datatype" {
+			if name != "datatype" {
+				for _, d := range docsFolder {
+					element := d.(map[string]interface{})
+					key := element["key"].(string) //只找pub的
+					if strings.HasSuffix(key, "pub") {
+						funcname := element["name_en"].(string)
+						docsList[funcname] = true
 						docFuncList[funcname] = apikey + " " + key
 					}
 				}
+			} else {
+				for _, d := range docsFolder {
+					element := d.(map[string]interface{})
+					funcname := element["name_en"].(string)
+					docsList[funcname] = true
+				}
 			}
+
 			ecsDocs[name] = docsList
 		}
 	}
