@@ -5,6 +5,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"net/url"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
@@ -97,14 +98,21 @@ func ParseMarkDown(markdown *goquery.Document) (string, []Parameter, []Parameter
 	return funcName, request, response
 }
 
-func Generate(funcName string, request []Parameter, response []Parameter) {
-	GenerateRequest(funcName, request)
-	GenerateResponse(funcName, response)
-	GenerateFunc(funcName, request, response)
+func Generate(funcName string, request []Parameter, response []Parameter, apiType string, path string) {
+	file_temp := path + string(filepath.Separator) + apiType + ".go"
+	fmt.Println(file_temp)
+
+	if FileExist(file_temp) == false {
+		os.Create(file_temp)
+	}
+
+	GenerateRequest(funcName, request, file_temp)
+	GenerateResponse(funcName, response, file_temp)
+	GenerateFunc(funcName, request, response, file_temp)
 }
 
-func GenerateRequest(funcName string, request []Parameter) {
-	fwrite, err := os.OpenFile("/home/ubuntu/Documents/GoWork/src/github.com/denverdino/aliyungo/ecs/news.go", os.O_RDWR|os.O_APPEND, 0660)
+func GenerateRequest(funcName string, request []Parameter, filename string) {
+	fwrite, err := os.OpenFile(filename, os.O_RDWR|os.O_APPEND, 0660)
 	defer fwrite.Close()
 
 	if err != nil {
@@ -125,8 +133,8 @@ func GenerateRequest(funcName string, request []Parameter) {
 	fwrite.WriteString("}\n\n")
 }
 
-func GenerateResponse(funcName string, response []Parameter) {
-	fwrite, err := os.OpenFile("/home/ubuntu/Documents/GoWork/src/github.com/denverdino/aliyungo/ecs/news.go", os.O_RDWR|os.O_APPEND, 0660)
+func GenerateResponse(funcName string, response []Parameter, filename string) {
+	fwrite, err := os.OpenFile(filename, os.O_RDWR|os.O_APPEND, 0660)
 	defer fwrite.Close()
 
 	if err != nil {
@@ -152,8 +160,8 @@ func GenerateResponse(funcName string, response []Parameter) {
 	fwrite.WriteString("}\n\n")
 }
 
-func GenerateFunc(funcName string, request []Parameter, response []Parameter) {
-	fwrite, err := os.OpenFile("/home/ubuntu/Documents/GoWork/src/github.com/denverdino/aliyungo/ecs/news.go", os.O_RDWR|os.O_APPEND, 0660)
+func GenerateFunc(funcName string, request []Parameter, response []Parameter, filename string) {
+	fwrite, err := os.OpenFile(filename, os.O_RDWR|os.O_APPEND, 0660)
 	defer fwrite.Close()
 
 	if err != nil {
@@ -185,17 +193,29 @@ func GenerateFunc(funcName string, request []Parameter, response []Parameter) {
 	fwrite.WriteString("}\n\n")
 }
 
-func GenerateCodeTemplate(fileList []string, module string) {
+func GenerateEcsTempFolder(path string) string {
+	err := os.Mkdir(path+string(filepath.Separator)+"ecs_temp", 0777)
+
+	if err != nil {
+		fmt.Println(err, "creating ecs__temp folder failed")
+		return ""
+	}
+
+	return path + string(filepath.Separator) + "ecs_temp"
+}
+
+func GenerateCodeTemplate(path string, fileList []string, module string) {
+	ecs_temp := GenerateEcsTempFolder(path)
 
 	diffEcsDocAndSdkResult, version := DiffEcsDocAndApi(fileList, module)
 
 	for _, value := range diffEcsDocAndSdkResult {
-		funcInfo := strings.Split(value, " ") //funcInfo[0] apiKey  funcInfo[1] funcKey
+		funcInfo := strings.Split(value, " ") //funcInfo[0] apiKey  funcInfo[1] funcKey  funcInfo[2] 函数所属类型(instance, disk....)
 
 		url := "https://docs.aliyun.com/getMd?url=cn/ecs/" + version + "/doc/0040-open-api/" + funcInfo[0] + "/" + funcInfo[1] + ".md"
 		fmt.Println(url)
 		markdown := GetMarkdown(url)
 		funcName, request, response := ParseMarkDown(markdown)
-		Generate(funcName, request, response)
+		Generate(funcName, request, response, funcInfo[2], ecs_temp)
 	}
 }

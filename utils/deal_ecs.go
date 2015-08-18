@@ -44,7 +44,7 @@ func GetEcsDocs(module string) string {
 					if strings.HasSuffix(key, "pub") {
 						funcname := element["name_en"].(string)
 						docsList[funcname] = true
-						docFuncList[funcname] = apikey + " " + key
+						docFuncList[funcname] = apikey + " " + key + " " + name
 					}
 				}
 			} else {

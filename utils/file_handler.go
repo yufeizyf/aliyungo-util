@@ -104,3 +104,13 @@ func WriteBackAndRemove(temp string, src string) {
 		os.Remove(temp)
 	}
 }
+
+func FileExist(path string) bool {
+	_, err := os.Stat(path)
+
+	if err != nil && os.IsNotExist(err) {
+		return false
+	}
+
+	return true
+}
