@@ -111,6 +111,14 @@ func Generate(funcName string, request []Parameter, response []Parameter, apiTyp
 	GenerateFunc(funcName, request, response, file_temp)
 }
 
+func IsInteger(str string) string {
+	if str == "Integer" {
+		return "int"
+	}
+
+	return str
+}
+
 func GenerateRequest(funcName string, request []Parameter, filename string) {
 	fwrite, err := os.OpenFile(filename, os.O_RDWR|os.O_APPEND, 0660)
 	defer fwrite.Close()
@@ -126,7 +134,7 @@ func GenerateRequest(funcName string, request []Parameter, filename string) {
 	fwrite.WriteString(line)
 
 	for i := 0; i < len(request); i++ {
-		line = "\t" + request[i].pname + "\t" + request[i].ptype + "\n"
+		line = "\t" + request[i].pname + "\t" + strings.ToLower(IsInteger(request[i].ptype)) + "\n"
 		fwrite.WriteString(line)
 	}
 
@@ -153,7 +161,7 @@ func GenerateResponse(funcName string, response []Parameter, filename string) {
 		fwrite.WriteString("\tCommonResponse\n")
 
 		for i := 0; i < len(response); i++ {
-			line = "\t" + response[i].pname + "\t" + response[i].ptype + "\n"
+			line = "\t" + response[i].pname + "\t" + strings.ToLower(IsInteger(response[i].ptype)) + "\n"
 			fwrite.WriteString(line)
 		}
 	}
@@ -187,7 +195,7 @@ func GenerateFunc(funcName string, request []Parameter, response []Parameter, fi
 	fwrite.WriteString(line)
 
 	//err = client.Invoke("DescribeInstanceMonitorData", args, &response)
-	line = "\t" + "client.Invoke(\"" + funcName + "\", args, &response)\n"
+	line = "\t" + "client.Invoke(\"" + funcName + "\", &args, &response)\n"
 	fwrite.WriteString(line)
 
 	fwrite.WriteString("}\n\n")
@@ -208,6 +216,8 @@ func GenerateCodeTemplate(path string, fileList []string, module string) {
 	ecs_temp := GenerateEcsTempFolder(path)
 
 	diffEcsDocAndSdkResult, version := DiffEcsDocAndApi(fileList, module)
+
+	fmt.Println(diffEcsDocAndSdkResult)
 
 	for _, value := range diffEcsDocAndSdkResult {
 		funcInfo := strings.Split(value, " ") //funcInfo[0] apiKey  funcInfo[1] funcKey  funcInfo[2] 函数所属类型(instance, disk....)
