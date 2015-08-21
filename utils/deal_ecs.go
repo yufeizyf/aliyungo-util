@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func GetEcsDocs(module string) {
+func GetEcsDocs(module string) string {
 	jsonstring, _ := simplejson.NewJson([]byte(module))
 
 	version, _ := jsonstring.Get("ecs").Get("version").String()
@@ -32,23 +32,34 @@ func GetEcsDocs(module string) {
 	for _, d := range oaFolder {
 		docs := d.(map[string]interface{}) //取出指定类型api信息，如instance，disk。。。
 		name := docs["name_en"].(string)   //取出api名字
+		apikey := docs["key"].(string)
 
 		if ECSAPI[name] == true {
 			docsFolder := docs["isFolder"].([]interface{})
 			docsList := Funclist{}
-
-			for _, d := range docsFolder {
-				element := d.(map[string]interface{})
-				funcname := element["name_en"].(string)
-				docsList[funcname] = true
-
-				if name != "datatype" {
-					docFuncList[funcname] = true
+			if name != "datatype" {
+				for _, d := range docsFolder {
+					element := d.(map[string]interface{})
+					key := element["key"].(string) //只找pub的
+					if strings.HasSuffix(key, "pub") {
+						funcname := element["name_en"].(string)
+						docsList[funcname] = true
+						docFuncList[funcname] = apikey + " " + key + " " + name
+					}
+				}
+			} else {
+				for _, d := range docsFolder {
+					element := d.(map[string]interface{})
+					funcname := element["name_en"].(string)
+					docsList[funcname] = true
 				}
 			}
+
 			ecsDocs[name] = docsList
 		}
 	}
+
+	return version //版本号用于区分ecs文档
 }
 
 func DealEcs(fileList []string, module string) {
@@ -106,6 +117,8 @@ func DealEcs(fileList []string, module string) {
 						fwrite.WriteString(line)
 					}
 
+				} else if line == "//\n" || strings.HasPrefix(line, "// You can read doc at ") {
+					// do nothing
 				} else {
 					fwrite.WriteString(line)
 				}
@@ -133,16 +146,16 @@ func isExistECsDocs(funcname string) (string, bool) {
 	return "", false
 }
 
-var docFuncList = make(map[string]bool)
+var docFuncList = make(map[string]string)
 
-func DiffEcsDocAndApi(fileList []string, module string) {
+func DiffEcsDocAndApi(fileList []string, module string) (map[string]string, string) {
 	fmt.Println("Begin to find those api in http://docs.aliyun.com but not in sdk")
 
-	GetEcsDocs(module)
+	version := GetEcsDocs(module)
 
 	var sdkFuncList = make(map[string]bool)
 
-	diffEcsDocAndSdkResult := []string{}
+	var diffEcsDocAndSdkResult = make(map[string]string)
 
 	for i := 0; i < len(fileList); i++ {
 		path := fileList[i]
@@ -152,7 +165,7 @@ func DiffEcsDocAndApi(fileList []string, module string) {
 
 		if err != nil {
 			fmt.Println(path, err)
-			return
+			return nil, version
 		} else {
 			inbuff := bufio.NewReader(fread)
 
@@ -181,13 +194,19 @@ func DiffEcsDocAndApi(fileList []string, module string) {
 		name := keys[i]
 
 		if sdkFuncList[name] == false {
-			diffEcsDocAndSdkResult = append(diffEcsDocAndSdkResult, name)
+			diffEcsDocAndSdkResult[name] = docFuncList[name]
 		}
 	}
 
 	fmt.Println("Docs has but not in SDK :")
 
-	for i := 0; i < len(diffEcsDocAndSdkResult); i++ {
-		fmt.Println(diffEcsDocAndSdkResult[i])
+	// for i := 0; i < len(diffEcsDocAndSdkResult); i++ {
+	// 	fmt.Println(diffEcsDocAndSdkResult[i])
+	// }
+
+	for key, value := range diffEcsDocAndSdkResult {
+		fmt.Println(key + "  " + value)
 	}
+
+	return diffEcsDocAndSdkResult, version
 }

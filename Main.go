@@ -7,13 +7,17 @@ import (
 func main() {
 	module := utils.ParseJsonData()
 
-	fileList := utils.GetFileList("/home/ubuntu/Documents/GoWork/src/github.com/denverdino/aliyungo")
+	filePath := "/Users/zhangyf/Documents/GoWork/src/github.com/denverdino/aliyungo"
+
+	fileList := utils.GetFileList(filePath)
 
 	//utils.DealDataType(fileList, module)
 
 	//utils.DealOss(fileList, module)
 
-	//utils.DealEcs(fileList, module)
+	utils.DealEcs(fileList, module)
 
-	utils.DiffEcsDocAndApi(fileList, module)
+	//utils.DiffEcsDocAndApi(fileList, module)
+
+	//utils.GenerateCodeTemplate(filePath, fileList, module)
 }
